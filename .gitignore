@@ -1,0 +1,26 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# .NET build files
+**/bin/
+**/obj/
+
+# React
+**/node_modules/
+**/build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
