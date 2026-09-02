@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    transition: all 0.2s;
+    height: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand h3 {
+    color: #24262b;
+   font-weight: 800;
+    font-size: 28px;
+    margin: 0;
+    padding-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-scrolled h3 {
+    color: #b5d43b;
 }
+
+.arena-logo {
+     width: 45px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.navbar-logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-right: 4px;
+}
+
+.cart-icon {
+    height: 18px;
+}
+
+.navbar .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* =========================
+   HERO CAROUSEL
+========================= */
+
+.carousel-inner img,
+.carousel-inner video {
+    object-fit: cover;
+    padding-bottom: 5px;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   CATEGORY SECTION
+========================= */
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box {
+    margin: 0 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 2s;
+}
+
+.box img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+/* =========================
+   SECOND CATEGORY ROW
+========================= */
+
+.container2 {
+    justify-content: center;
+    width: 100%;
+    margin: 3.5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box1 {
+    width: 100%;
+    margin: 0 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.box1 img {
+    display: block;
+    width: 100%;
+    transition: transform 2s;
+    padding-bottom: 5px;
+}
+
+.box1 img:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    .container2 {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .box1 {
+        width: 100%;
+        margin: 3px 0;
+    }
+}
+
