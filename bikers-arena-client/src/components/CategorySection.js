@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import jacketImage from "../assets/home-pic/jacket.jpg";
 import glovesImage from "../assets/home-pic/gloves.jpg";
@@ -19,7 +20,7 @@ function CategorySection() {
 
                 {/* Jackets */}
                 <div className="box category-box">
-                    <a href="/products/jackets">
+                    <Link to="/products/jackets">
                         <img
                             src={jacketImage}
                             alt="Jackets"
@@ -28,13 +29,13 @@ function CategorySection() {
                         <span className="category-button">
                             <span>Jackets</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
 
                 {/* Gloves */}
                 <div className="box category-box">
-                    <a href="/products/gloves">
+                    <Link to="/products/gloves">
                         <img
                             src={glovesImage}
                             alt="Gloves"
@@ -43,13 +44,13 @@ function CategorySection() {
                         <span className="category-button">
                             <span>Gloves</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
 
                 {/* Luggage */}
                 <div className="box category-box">
-                    <a href="/products/luggage">
+                    <Link to="/products/luggage">
                         <img
                             src={luggageImage}
                             alt="Luggage"
@@ -58,7 +59,7 @@ function CategorySection() {
                         <span className="category-button">
                             <span>Luggage</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
             </div>
@@ -72,7 +73,7 @@ function CategorySection() {
 
                 {/* Pants */}
                 <div className="box1 category-box">
-                    <a href="/products/pants">
+                    <Link to="/products/pants">
                         <img
                             src={pantImage}
                             alt="Pants"
@@ -81,13 +82,13 @@ function CategorySection() {
                         <span className="category-button">
                             <span>Pants</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
 
                 {/* Knee Guard */}
                 <div className="box1 category-box">
-                    <a href="/products/knee-guard">
+                    <Link to="/products/knee-guard">
                         <img
                             src={kneeGuardImage}
                             alt="Knee Guard"
@@ -96,13 +97,13 @@ function CategorySection() {
                         <span className="category-button">
                             <span>Knee Guard</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
 
                 {/* Accessories */}
                 <div className="box1 category-box">
-                    <a href="/products/accessories">
+                    <Link to="/products/accessories">
                         <img
                             src={accessoriesImage}
                             alt="Accessories"
@@ -111,13 +112,13 @@ function CategorySection() {
                         <span className="category-button">
                             <span>Accessories</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
 
                 {/* Base Layers */}
                 <div className="box1 category-box">
-                    <a href="/products/base-layers">
+                    <Link to="/products/base-layers">
                         <img
                             src={baseLayerImage}
                             alt="Base Layers"
@@ -126,7 +127,7 @@ function CategorySection() {
                         <span className="category-button">
                             <span>Base Layers</span>
                         </span>
-                    </a>
+                    </Link>
                 </div>
 
             </div>

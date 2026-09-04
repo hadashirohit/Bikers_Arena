@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import arenaLogo from "../assets/icon/Arena Logo.png";
 
 function Navbar() {
@@ -73,91 +73,93 @@ function Navbar() {
 
                         {/* Products */}
                         <li className="nav-item dropdown">
-                            <a
-                                className="nav-link dropdown-toggle"
-                                href="/products"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                <i className="bi bi-bag-fill nav-icon"></i>
-                                Products
-                            </a>
 
-                            <ul className="dropdown-menu dropdown-menu-dark">
+    <a
+        className="nav-link dropdown-toggle"
+        href="/products"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+    >
+        <i className="bi bi-bag-fill nav-icon"></i>
+        Products
+    </a>
 
-                                <li>
-                                    <a
-                                        className="dropdown-item"
-                                        href="/products/jackets"
-                                    >
-                                        <i className="bi bi-shield-fill me-2"></i>
-                                        Jackets
-                                    </a>
-                                </li>
+    <ul className="dropdown-menu dropdown-menu-dark">
 
-                                <li>
-                                    <a
-                                        className="dropdown-item"
-                                        href="/products/gloves"
-                                    >
-                                        <i className="bi bi-hand-index-fill me-2"></i>
-                                        Gloves
-                                    </a>
-                                </li>
+        <li>
+            <Link
+                className="dropdown-item"
+                to="/products/jackets"
+            >
+                <i className="bi bi-shield-fill me-2"></i>
+                Jackets
+            </Link>
+        </li>
 
-                                <li>
-                                    <a
-                                        className="dropdown-item"
-                                        href="/products/luggage"
-                                    >
-                                        <i className="bi bi-backpack-fill me-2"></i>
-                                        Luggage
-                                    </a>
-                                </li>
+        <li>
+            <Link
+                className="dropdown-item"
+                to="/products/gloves"
+            >
+                <i className="bi bi-hand-index-fill me-2"></i>
+                Gloves
+            </Link>
+        </li>
 
-                                <li>
-                                    <a
-                                        className="dropdown-item"
-                                        href="/products/pants"
-                                    >
-                                        <i className="bi bi-person-standing me-2"></i>
-                                        Pants
-                                    </a>
-                                </li>
+        <li>
+            <Link
+                className="dropdown-item"
+                to="/products/luggage"
+            >
+                <i className="bi bi-backpack-fill me-2"></i>
+                Luggage
+            </Link>
+        </li>
 
-                                <li>
-                                    <a
-                                        className="dropdown-item"
-                                        href="/products/knee-guard"
-                                    >
-                                        <i className="bi bi-shield-check me-2"></i>
-                                        Knee Guard
-                                    </a>
-                                </li>
+        <li>
+            <Link
+                className="dropdown-item"
+                to="/products/pants"
+            >
+                <i className="bi bi-person-standing me-2"></i>
+                Pants
+            </Link>
+        </li>
 
-                                <li>
-                                    <a
-                                        className="dropdown-item"
-                                        href="/products/accessories"
-                                    >
-                                        <i className="bi bi-gear-fill me-2"></i>
-                                        Accessories
-                                    </a>
-                                </li>
+        <li>
+            <Link
+                className="dropdown-item"
+                to="/products/knee-guard"
+            >
+                <i className="bi bi-shield-check me-2"></i>
+                Knee Guard
+            </Link>
+        </li>
 
-                                <li>
-                                    <a
-                                        className="dropdown-item"
-                                        href="/products/base-layers"
-                                    >
-                                        <i className="bi bi-layers-fill me-2"></i>
-                                        Base Layers
-                                    </a>
-                                </li>
+        <li>
+            <Link
+                className="dropdown-item"
+                to="/products/accessories"
+            >
+                <i className="bi bi-gear-fill me-2"></i>
+                Accessories
+            </Link>
+        </li>
 
-                            </ul>
-                        </li>
+        <li>
+            <Link
+                className="dropdown-item"
+                to="/products/base-layers"
+            >
+                <i className="bi bi-layers-fill me-2"></i>
+                Base Layers
+            </Link>
+        </li>
+
+    </ul>
+
+</li>
 
                         {/* Login */}
                         <li className="nav-item">
